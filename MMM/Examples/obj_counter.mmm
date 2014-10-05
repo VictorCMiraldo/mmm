@@ -1,0 +1,9 @@
+class Counter {
+  var c : int;
+  /*
+  Counter(a : int) { this.c = a; return NIL; }
+  */
+  inc(i : int) : void     { this.c = this.c + i; return NIL; }
+  
+  dec(i : int) : void     { this.c = this.c - i; return NIL; }
+}

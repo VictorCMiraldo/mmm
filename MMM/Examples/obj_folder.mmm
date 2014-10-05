@@ -1,0 +1,47 @@
+class Folder {
+  var sl : Stack;
+  var sr : Stack;
+  
+  Folder (s : Stack) {
+    this.sl = s;
+    this.sr = [];
+  }
+  
+  tr() : void {
+    p = this.sl.top();
+    this.sl.pop();
+    this.sr.push(p);
+  }
+  
+  tl() : void {
+    p = this.sr.top();
+    this.sr.pop();
+    this.sl.push(p);
+  }
+  
+  read() : int {
+    return this.sr.top();
+  }
+}
+
+
+class Stack {
+  var st : list of int;
+  
+  push(i : int) : void {
+    this.st = i @ this.st;
+  }
+  
+  top() : int { 
+    res = 0;
+    if (length this.st == 0)
+      then { res = 0; }
+      else { res = head(this.st); }
+    return res;
+  }
+  
+  pop() : void {
+    if (length this.st > 0)
+      then { this.st = tail(this.st); }
+  }
+}

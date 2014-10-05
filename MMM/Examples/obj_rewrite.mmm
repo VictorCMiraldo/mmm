@@ -1,0 +1,10 @@
+class Rewrite {
+  var n : int;
+  var m : int;
+  
+  run(i : int) : int {
+    i = i + this.n;
+    i = i + this.m;
+    return i;
+  }
+}

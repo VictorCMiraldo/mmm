@@ -1,0 +1,20 @@
+class Stack {
+  var st : list of int;
+  
+  push(i : int) : void {
+    this.st = i @ this.st;
+  }
+  
+  top() : int { 
+    res = 0;
+    if (length this.st == 0)
+      then { res = 0; }
+      else { res = head(this.st); }
+    return res;
+  }
+  
+  pop() : void {
+    if (length this.st > 0)
+      then { this.st = tail(this.st); }
+  }
+}

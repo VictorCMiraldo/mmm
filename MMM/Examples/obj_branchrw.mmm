@@ -1,0 +1,11 @@
+class BranchRw {
+  var n : int;
+  
+  run(m : int) : int {
+    if (this.n <= m) then {
+      this.n = this.n + 1;
+    }
+    
+    return m;
+  }
+}

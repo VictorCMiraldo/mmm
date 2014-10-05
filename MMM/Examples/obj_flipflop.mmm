@@ -1,0 +1,32 @@
+class Flipflop {
+  var c : int;
+  
+  Flipflop(a : int) : void { this.c = a; }
+  
+  set(i : int) : void     { this.c = i; }
+  
+  get() : int { return this.c; }
+}
+
+/*
+Generated code:
+
+{-# LINE 2 "<interactive>" #-}
+set_c_Flipflop :: (Strong m) => (MMM m Integer Integer ())
+set_c_Flipflop =  (return . (split p2 bang))
+
+{-# LINE 2 "<interactive>" #-}
+get_c_Flipflop :: (Strong m) => (MMM m Integer () Integer)
+get_c_Flipflop =  (getst
+                   .! (f2m id))
+                   
+{-# LINE 4 "<interactive>" #-}
+flipflopFLIPFLOP :: (Strong m) => (MMM m Integer Integer ())
+flipflopFLIPFLOP =  (set_c_Flipflop .! (f2m id))
+
+{-# LINE 6 "<interactive>" #-}
+flipflopSET :: (Strong m) => (MMM m Integer Integer ())
+flipflopSET =  (set_c_Flipflop .! (f2m id))
+flipflopGET :: (Strong m) => (MMM m Integer () Integer)
+flipflopGET =  ((f2m p2)
+                .! ((runm get_c_Flipflop) .! (f2m pwnil)))

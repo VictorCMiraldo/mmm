@@ -1,0 +1,25 @@
+class ModCounter {
+  var m : int;
+  var c : int;
+  
+  ModCounter(mod : int) {
+    this.m = mod;
+    this.c = 0;
+  }
+  
+  tick() : void {
+    if (this.m <= this.c)
+    then { this.c = 0; }
+    else { this.c = this.c + 1; }
+  }
+  /*
+  getClock() : int {
+    return this.c;
+  }
+  
+  getMod() : int {
+    return this.m;
+  }
+  */
+}
+

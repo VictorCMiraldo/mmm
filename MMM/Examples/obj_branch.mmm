@@ -1,0 +1,12 @@
+class Branching {
+  var tr : int;
+  
+  f(i : int) : int {
+    if (i <= this.tr) then {
+      a = 0;
+    } else {
+      a = 1;
+    }
+    return a;
+  }
+}
