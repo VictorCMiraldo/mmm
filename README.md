@@ -4,7 +4,8 @@ MMM
 Prelude
 -------
 
-This work is funded by project QAIS [link](http://wiki.di.uminho.pt/twiki/bin/view/Research/QAIS/WebHome).
+This work is funded by project [QAIS](http://wiki.di.uminho.pt/twiki/bin/view/Research/QAIS/WebHome).
+Detailed information can be found in the Tech. Report.
 
 Contents
 --------
