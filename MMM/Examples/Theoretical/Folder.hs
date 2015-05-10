@@ -1,4 +1,4 @@
-module MMM.Examples.Folder where
+module MMM.Examples.Theoretical.Folder where
 
 import MMM.Core.All
 import MMM.Qais
