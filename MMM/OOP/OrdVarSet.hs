@@ -40,8 +40,16 @@ import qualified Debug.Trace as T
 --  To illustrate the functions below, we'll consider a (vs :: VS id) such that
 --
 --  @vs = M.fromList $ [("a", 1), ("b", 2), ("c", 3), ("d", 4)]@
+--
+--  Note the distinction between focused and unfocused varsets,
+--  Gladly, products are associative, therefore we can shuffle them
+--  however we see fit.
 data VS id
+  -- |A VSSingle represents a normally left-associative product,
+  --  If vs is a VSSingle, it represents (((a * b) * c) * d)
   = VSSingle (M.Map id Int)
+  -- |A focus point is used to pass inputs to components. If
+  --  vs is a VSFocus 1, it will represent (a * ((b * c) * d))
   | VSFocus Int (M.Map id Int)
   deriving (Show, Eq)
   
